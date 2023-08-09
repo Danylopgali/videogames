@@ -1,0 +1,90 @@
+.Navbar{
+    -webkit-appearance: none;
+    border:none;
+    outline: none;
+    padding: 10px;
+    width: 150px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    
+}
+.button-crear {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+ position: fixed;
+  top: 10px; /* Ajusta la distancia desde la parte superior */
+  right: 10px;
+}
+
+.button-crear:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+      box-shadow: 0 0 0 0 #05bada66;
+  }
+  
+  70% {
+      box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+  
+  100% {
+      box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+
+.search-container {
+    position: relative;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-buscar {
+    padding: 10px;
+    flex: 1; /* Permite que el input ocupe el espacio disponible */
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+    border: none;
+    color: #9EBCD9;
+    font-size: 40px;
+    border-radius: 50px;
+  }
+  
+  .input-buscar:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
+  }
+  
+  .button-buscar {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    margin-left: 10px; /* Espacio entre el input y el botón */
+  }
+  
+  .button-buscar:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+  }
+  

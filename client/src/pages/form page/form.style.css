@@ -1,0 +1,84 @@
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #0077be, #3b8df2);
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    animation: form-animation 0.5s ease-in-out;
+  }
+  
+  @keyframes form-animation {
+    from {
+      transform: rotateX(-30deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .input {
+    color: #ffffff;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    max-width: 190px;
+   }
+   
+   .input:active {
+    box-shadow: 2px 2px 15px #b4adbb inset;
+   }
+   
+ 
+  .button-send {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+   }
+   
+   .button-send:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+   label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  .title{
+display: flex;
+justify-content: center;
+align-items: center;
+  }

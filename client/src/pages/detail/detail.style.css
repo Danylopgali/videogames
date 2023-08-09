@@ -1,0 +1,30 @@
+.Detail {
+    display: flex;
+    height: 100vh; /* La altura será igual al 100% de la altura de la ventana */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Detail img {
+    width: 50%; /* La imagen ocupará el 50% del ancho de la pantalla */
+    height: 100%; /* La imagen ocupará la altura completa de la pantalla */
+    object-fit: cover; /* La imagen se ajustará para cubrir el área completa del contenedor */
+  }
+  
+  .Detail .details {
+    width: 50%; /* Los detalles ocuparán el 50% del ancho de la pantalla */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .Detail .details h2 {
+    font-size: 28px; /* Aumentar el tamaño de la letra a 28px */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .Detail .details p {
+    font-size: 18px; /* Aumentar el tamaño de la letra a 18px */
+    margin-bottom: 15px; /* Agregar un salto de línea entre cada detalle */
+  }
+  

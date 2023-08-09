@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(
+        to left,
+        #373b44
+        0%,
+        #4286f4 100%
+    );
+    text-aling: center;
+  }
+  .home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+.filtros {
+  display: flex; /* Muestra los elementos en una fila */
+  align-items: center; /* Alinea verticalmente los elementos en el centro */
+  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+  margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
+}
+
+/* Estilos para los botones dentro del .filtros */
+.filtros button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+
+
+}
+
+button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional: Center vertically as well */
+}
+
+.pagination button{
+
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+  
+  
+  }
+  
+  button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+  }
