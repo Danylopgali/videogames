@@ -39,9 +39,9 @@ const DetailBynameHandler =async (req,res)=>{
     };
 
     const CreateNewVideogameHandler= async (req, res) => {
-        const { name,descripcion,plataformas,imagen,rating,fecha_de_lanzamiento,genre} = req.body;
+        const { name,descripcion,plataformas,background_image,rating,fecha_de_lanzamiento,genre} = req.body;
         try {
-          const response = await postNewVideogame(name,descripcion,plataformas,imagen,rating,fecha_de_lanzamiento,genre);
+          const response = await postNewVideogame(name,descripcion,plataformas,background_image,rating,fecha_de_lanzamiento,genre);
           res.status(200).json(response);
         } catch (error) {
           res.status(400).json({ error: error.message });

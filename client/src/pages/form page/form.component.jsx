@@ -7,7 +7,7 @@ function Form() {
     name: "",
     descripcion: "",
     plataformas: "",
-    imagen: "",
+    background_image: "",
     rating: "",
     fecha_de_lanzamiento: "",
     genre: [], // Agregamos un array para almacenar los géneros seleccionados
@@ -85,8 +85,8 @@ function Form() {
       errors.plataformas = "El las plataformas son obligatorio";
 
     }
-    if (!Input.imagen) {
-      errors.imagen = "La imagen es obligatoria";
+    if (!Input.background_image) {
+      errors.background_image = "La background_image es obligatoria";
 
     }
     if (Input.rating > 5) {
@@ -177,9 +177,9 @@ function Form() {
           {errors.plataformas && <p clplataformas="error">{errors.plataformas}</p>}
         </div>
         <div>
-          <h2>  <label className='tag'>Imagen (COPIA EL ENLASE DE LA IMAGEN QUE DESAS COLOCAR O COLOCA NUEVAMENTE EL NOMBRE DEL JUEGO)</label></h2>
-          <input name="imagen" class="input" value={Input.imagen} onChange={handleChange} />
-          {errors.imagen && <p className="error">{errors.imagen}</p>}
+          <h2>  <label className='tag'>background_image (COPIA EL ENLASE DE LA background_image QUE DESAS COLOCAR O COLOCA NUEVAMENTE EL NOMBRE DEL JUEGO)</label></h2>
+          <input name="background_image" class="input" value={Input.background_image} onChange={handleChange} />
+          {errors.background_image && <p className="error">{errors.background_image}</p>}
         </div>
         <div>
           <h2>  <label className='tag'>Rating (ENTERE 1 y 5):</label></h2>

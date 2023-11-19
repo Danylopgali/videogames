@@ -16,7 +16,7 @@ function Detail() {
     return () => {
       dispatch({
         type: GET_GAME_DETAILS,
-        payload: [],
+        payload: {},
       });
     }
   }, [dispatch, id]);
@@ -25,7 +25,7 @@ function Detail() {
     return <p>Cargando detalles del juego...</p>;
   }
 
-  const { background_image, name, rating, genres, released, platforms } = gameDetails;
+  const { background_image, name, rating, genres, released, platforms,genre,plataformas,fecha_de_lanzamiento} = gameDetails;
 
   return (
     <div className="Detail">
@@ -35,16 +35,16 @@ function Detail() {
         <p>{name}</p>
 
         <h2>Géneros:</h2>
-        <p>{genres?.map((genre) => genre.name).join(", ")}</p>
+        <p>{genres?.map((genre) => genre.name).join(", ") } {genre?.map((genre)=>genre).join(",")}</p>
 
         <h2>Plataformas:</h2>
-        <p>{platforms?.map((platform) => platform.platform.name).join(", ")}</p>
+        <p>{platforms?.map((platform) => platform.platform.name).join(", ")}{plataformas}</p>
 
         <h2>Rating:</h2>
         <p>{rating}</p>
 
         <h2>Fecha de lanzamiento:</h2>
-        <p>{released}</p>
+        <p>{released} {fecha_de_lanzamiento}</p>
 
         <h2>Id:</h2>
         <p>{id}</p>

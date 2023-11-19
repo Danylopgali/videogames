@@ -26,8 +26,8 @@ const results = [(await axios.get(`https://api.rawg.io/api/games?key=fc1374b5cf6
 return results.slice(0,15);
 }
 
-const postNewVideogame= async(name,descripcion,plataformas,imagen,rating,fecha_de_lanzamiento,genre)=>{
-    const newVideogame= await Videogame.create({name,descripcion,plataformas,imagen,rating,fecha_de_lanzamiento,genre});
+const postNewVideogame= async(name,descripcion,plataformas,background_image,rating,fecha_de_lanzamiento,genre)=>{
+    const newVideogame= await Videogame.create({name,descripcion,plataformas,background_image,rating,fecha_de_lanzamiento,genre});
     const selectedGenres = await Genres.findAll({
       where: {
         genre: genre, // Usamos el parámetro "genre" que pasaste a la función
